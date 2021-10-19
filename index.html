@@ -17,10 +17,17 @@
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        
+        <a-assets>
+            <a-mixin id="text1" text="align:left value: This is a tree probably, maybe not though;"></a-mixin>
+        </a-assets>
         <a-camera gps-camera rotation-reader></a-camera>
 
-
+        <!--<a-box  material='opacity: 0.5;' gps-entity-place="latitude: 51.9958983;longitude: -0.9841860;" ></a-box>
         <a-entity gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" scale="0.15 0.15 0.15" gps-entity-place="latitude: 51.9958983;longitude: -0.9841860; " animation-mixer/>
+        <a-entity text="value: Hello World;" gps-entity-place="latitude: 51.9958983;longitude: -0.9841860; " scale="15 15 15" rotation="0 180 0"></a-entity>
+        <a-entity text="value: This is a tree probably, maybe not though;" gps-entity-place="latitude: 51.995886;longitude: -0.984109; " scale="15 15 15" rotation="0 180 0" wrap-count="30"></a-text>-->
+        <a-entity gps-entity-place="latitude: 51.9958983;longitude: -0.9841860;" geometry="primitive: plane; width: auto; height: auto" rotation="0 180 0" scale="5 5 5" material="color: #eee"
+                  text="color: blue; align: center; value: [CENTER ALIGNED]; width: 2; ">
+        </a-entity>
 	</a-scene>
 </body>
